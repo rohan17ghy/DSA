@@ -1,0 +1,13 @@
+Prefix Sum
+------------
+--> Finding the sum of subarray between i and j in O(1) time
+
+Monoqueue
+------------
+--> Keeping track of max/min elements over the sliding window can be done using monoqueue. TC: O(n)
+A heap can also be used in this case but TC: O(nLog(n)) since insertion and deletion takes O(log(n)) for heaps
+
+Offset approach
+---------------
+--> See the question maxLen_RepeatedSubArray.py in TwoPointer folder
+https://leetcode.com/problems/maximum-length-of-repeated-subarray/

@@ -1,0 +1,12 @@
+--> Good Problems on modulus arithmetic
+    	-2598_Smallest_Missing_Int_After_Operations.py
+
+
+--> Concepts
+	-The median minimizes the sum of absolute deviations
+		--> Check out https://leetcode.com/problems/make-k-subarray-sums-equal/description/
+		--> Proof: https://math.stackexchange.com/questions/113270/the-median-minimizes-the-sum-of-absolute-deviations-the-ell-1-norm/113336#113336
+
+	-Sieve of erathosthenes
+		--> https://leetcode.com/problems/count-primes/description/
+		--> Check out https://www.youtube.com/watch?v=QDFM7Mjk2mc

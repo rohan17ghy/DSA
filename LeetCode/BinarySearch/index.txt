@@ -1,0 +1,15 @@
+Template for Binary Search
+--> 35_SearchInsertPosition_Easy.py
+
+Good Binary Search problems
+--> findKClosestElements_Medium.py
+--> 1539_KthMissingPosNum_Medium.py
+
+Binary Search on answer
+--> 2187_MinTimeToCompleteTrips_Medium.py
+--> 1539_KthMissingPosNum_Medium.py
+
+IMP POINTS
+--> Sometimes in the binary search condition we need to give start = mid, but then this leads to TLE.
+There is a very easy fix for this that is instead of mid = (start + end) // 2 we can use 
+mid = (start + end + 1) // 2   

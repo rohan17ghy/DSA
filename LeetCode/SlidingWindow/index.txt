@@ -1,0 +1,5 @@
+Template code for variable size sliding window
+    --> longestNiceSubArray_Medium.py
+
+Template code for fixed size sliding window
+    --> Minimum Recolors to get K Consecutive Black Blocks

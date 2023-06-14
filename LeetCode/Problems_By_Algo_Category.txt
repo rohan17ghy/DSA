@@ -1,0 +1,11 @@
+Sweep line problems
+--> https://leetcode.com/problems/meeting-rooms-ii/
+--> https://leetcode.com/problems/car-pooling/discuss/317610/JavaC++Python-Meeting-Rooms-III
+--> https://leetcode.com/problems/corporate-flight-bookings/discuss/328856/JavaC%2B%2BPython-Straight-Forward-Solution
+
+Interval problems
+--> https://leetcode.com/problems/meeting-rooms/
+--> https://leetcode.com/problems/meeting-rooms-ii/
+--> https://leetcode.com/problems/teemo-attacking/
+--> https://leetcode.com/problems/add-bold-tag-in-string/
+--> https://leetcode.com/problems/employee-free-time/

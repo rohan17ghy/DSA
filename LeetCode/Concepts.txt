@@ -1,0 +1,11 @@
+--> Inclusion-Exclusion principle
+
+union(A, B) = A + B - intersect(A, B) 
+
+https://leetcode.com/problems/number-of-excellent-pairs/discuss/2324984/JavaC%2B%2BPython-Inclusion-Exclusion-Principle
+
+--> BitSet for space optimization
+https://www.geeksforgeeks.org/c-bitset-and-its-application/
+
+
+

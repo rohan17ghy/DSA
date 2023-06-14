@@ -1,0 +1,2 @@
+--> Standard Trie Problem(Template problem)
+    -sumOfPrefixScoresOfStrings_Hard.py

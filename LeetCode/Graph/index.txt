@@ -1,0 +1,21 @@
+--> Template for DFS (for matrix input), very concise code without visited array
+    -numberOfIslands_Medium.py
+--> Template for DFS (for adjacency list input)
+    -cycleInUndirectedGraph.py
+--> TLE in BFS
+    -shortestPathInBinaryMatrix.py
+
+Patterns
+    --> Djikstra's to Binary Search with BFS
+        -pathWithMinimumEffort.py
+    --> Recursive leap of faith 
+        -2477_Min_Fuel_To_Reach_Capital.py
+    --> BFS with path reconstruction
+        -126_WordLadder2_Hard.py
+    --> dfsVisited concept
+        -2360_LongestCycleInGraph_Hard.py
+
+Algorithms
+    --> Kahn algorithm(Topo Sort)
+        -KahnAlgo_Medium.py
+    

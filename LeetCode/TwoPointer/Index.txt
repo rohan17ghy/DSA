@@ -1,0 +1,5 @@
+Conceptual Questions
+    --> movePieces_To_Obtain_String_Medium.py
+
+Pattern
+    --> Offset pattern : maxLen_RepeatedSubArray.py

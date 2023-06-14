@@ -1,0 +1,6 @@
+Concepts
+--> Level Order traversal can be done recursively without queue
+Advantage is less code. Checkout the problem "AverageOfLevelsInBinaryTree"  
+
+Good Tree Problems
+    --> 1372_LongestZigZagPath_Medium.py

@@ -1,0 +1,27 @@
+
+
+1. DSA
+	-Theory --> GFG + YT
+	-Practise --> InterviewBit + Leetcode
+	
+	--> Importance 7/10
+	
+2 LLD + HLD
+	--refactoring.guru OOPS --> LLD --> 20-25 questions
+	--Cracking the system design interview -Alex Xiu --> HLD --> 20-25 questions
+	--> System Design Primer Course GitHub
+	--> Educative LLD course
+	--> Educative HLD course
+	
+	--> Importance for beginner level 1/10
+
+3. CS Fundamentals
+	--SQL Queries --> Leetcode
+	--Concurrency
+	--Computer Networks
+	
+	--> Importance for beginner level 1/10
+
+3. Project Work
+	--> 1 programming language + 1 framework
+	--> Importance 

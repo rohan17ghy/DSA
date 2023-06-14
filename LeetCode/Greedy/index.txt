@@ -1,0 +1,8 @@
+--> Changing some part of the inputs to make the coding easy
+    -countSubIslands_Medium.py
+
+--> DP problems which can be optimized to Greedy
+    -334_Inc_Triplet_Subseq.py
+
+--> Greedy with sorting
+    -2542_MaxSubSeqScore_Medium.py     

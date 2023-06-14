@@ -1,0 +1,55 @@
+Template
+    --> 70_ClimbingStairs_Easy.py
+
+DP personal points
+    --> How to find the recurrence relation or write the recursive function ?? Wat parameters
+    to consider while writing the recursive fn. 
+        -To answer it we first need to think of the return type of the recursive function.
+        Wat should it return so that we can divide the subproblem and our bigger problem is easier.
+        It is easier if we note it down because whole problem depends on it and it might be changed
+        during implementation.
+
+DP Progression from top down --> bottom up --> space optimized
+    --> https://www.youtube.com/watch?v=HrHUZRXarWI
+
+DP time complexity 
+    --> DP time complexity is the the number of unique states/subproblems * time taken per state., check below article
+    --> A short to know states is the dp array that we define during bottom up approach. For eg: If we define dp[k][r]
+        then there are k * r states
+    --> https://www.freecodecamp.org/news/demystifying-dynamic-programming-24fbdb831d3a/
+    --> Time complexity of backtracing or recursion is (number of times function called) ^ N
+		--> https://www.codingninjas.com/codestudio/library/recursion-backtracking-time-complexity
+
+
+DP Patterns:
+    --> Take/Not Take Pattern
+        -subsetSumProblem_Medium_GFG.py
+        -416_PartitionEqualSubSetSum_Medium.py
+        -Count_Subsets_SumK_Medium_GFG.py
+        -Count_Partitions_With_Given_Diff_CodingNinjas.py
+    --> LCS DP
+        -1143_LCS_Medium.py
+    --> LIS DP
+        -DP_On_LIS\300_LIS_Medium.py
+    --> Partition DP
+        -Partition_DP\MCM_Hard_GFG.py
+    
+    --> DP Path Reconstruction
+        -Print_LongestCommonSubsequence_Hard_GFG.py
+        -1092_Shortest_Common_Supersequence_Hard.py
+        -DP_On_LIS\368_Largest_Divisible_Subset_Medium.py
+    
+    --> Longest Path in DAG DP(this terminology is used by ProgrammingLiveWithLarry)
+        -DP_On_LIS\368_Largest_Divisible_Subset_Medium.py
+        -DP_On_LIS\1048_Longest_String_Chain_Medium.py
+
+DP Good Questions
+    --> 983_MinimumCostForTckets_Medium.py
+    --> DP_On_LIS\673_Number_Of_LIS_Medium.py
+    --> 879_Profitable_Schemes_Hard.py
+
+DP optimized by greedy
+    --> 1402_Reducing_Dishes_Hard.py
+
+
+    

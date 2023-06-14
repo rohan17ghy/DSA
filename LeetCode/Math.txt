@@ -1,0 +1,48 @@
+Reference: https://www.youtube.com/watch?v=KdePjukNs98&t=29s && https://www.youtube.com/watch?v=tDM6lT-qjys
+
+--> Checking if a number N is prime can be done by checking if any number from [1......sqrt(N)] is a factor of N
+	TimeComplexity: O(sqrt(N))
+
+--> Finding all the prime number between 1 and N
+	--> Naive approach: for each num find the divisors. Time Complexity: O(n^2)
+	--> optimal approach: Sieve of Eratosthenes. Time Complexity: O(nLog(log(n)))
+
+--> Finding GCD/ HCF:
+	--> Euclid Formula - gcd(a, b) = gcd(a-b, a) = gcd(a % b, b); TC: O(log(max(a, b)))
+	--> gcd(0, n) = n where n != 0
+	--> Python: math.gcd(72, 24)
+	--> gcd(a,b) * lcm(a,b) = a*b
+	--> Co-prime numbers = a and b are co-prime if gcd(a, b) = 1
+	--> Prime numbers are co-prime to all numbers smaller than it
+
+--> Modulo arithmetic
+	--> (a + b) % m = ((a % m) + (b % m)) % m
+	--> (a - b) % m = ((a % m) - (b % m) + m) % m
+	--> (((a % m) % m) % m) = a % m
+	--> (a * b) % m = ((a % m) * (b % m)) % m
+	--> (a ** b) % m = ((a % m) ** b) % m
+	
+	--> Divison under mod
+		--> Check out Utkarsh Gupta video for this part https://www.youtube.com/watch?v=tDM6lT-qjys
+		--> bpow(-1) = (bpow(m-2))%m; TC: O(log(m)), THIS ONLY WORKS WHEN M IS PRIME
+	
+
+--> Fast Exponentiation(TC: O(log(b)))
+	--> Normal Exponential: a ^ b .Use a loop, TC: O(b)
+	--> a ^ b = (a ^ b/2) ^ 2 if b is even
+		  = ((a ^ (b-1)/2) ^ 2) * a  if b is odd
+
+--> ceil(a/b) = (a + b - 1) // b --> How ?? Find the reason after doing math topic
+--------------------------------
+XOR
+--> a ^ a = 0
+--> a ^ 0 = a
+--> Inverse of XOR is XOR itself
+	if a ^ b = c
+	then b = a ^ c holds true
+--> Returns the rightmost 1
+ip: 1010 op: 0010
+ip: 1100 op: 0100
+ip: 0001 op: 0001
+
+We can use XOR x ^ (x & (x-1)) to get the right most one

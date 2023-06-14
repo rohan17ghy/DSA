@@ -1,0 +1,6 @@
+For array questions following approachs are used:
+--> Sliding Window
+--> Two pointer
+--> Prefix/Suffix sum
+--> Sorting and searching
+--> Set and dictionary
