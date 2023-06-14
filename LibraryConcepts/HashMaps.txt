@@ -1,0 +1,4 @@
+Initialization: a = {}
+Set or Update : a['Leet'] = 'Code'
+Get: a['Leet'] | a.get('Leet', 'DefaultValue')
+Delete: a.pop('Leet')    

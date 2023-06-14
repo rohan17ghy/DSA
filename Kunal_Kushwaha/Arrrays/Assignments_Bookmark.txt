@@ -1,0 +1,18 @@
+https://leetcode.com/problems/number-of-good-pairs/ --> Try optimizing the code when u try again
+https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/ --> Try optimizing the code when u try again
+https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/ --> Try optimizing the code when u try again
+https://leetcode.com/problems/create-target-array-in-the-given-order/ --> Try optimizing the code when u try again
+https://leetcode.com/problems/check-if-the-sentence-is-pangram/ --> Try finding solution
+https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/ --> Increase speed of writing code, optimize the code
+https://leetcode.com/problems/add-to-array-form-of-integer/ --> Find a better soln
+https://leetcode.com/problems/maximum-population-year/ --> Increase speed
+https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/ --> Increase speed
+https://leetcode.com/problems/two-sum/ --> Important concept, increase speed
+https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/ --> Increase speed
+https://leetcode.com/problems/lucky-numbers-in-a-matrix/ --> Find soln and increase speed
+https://leetcode.com/problems/maximum-subarray/ --> Try after dynamic programming
+https://leetcode.com/problems/reshape-the-matrix/ --> Try optimizing
+https://leetcode.com/problems/set-matrix-zeroes/ --> Try finding soln without hints
+https://leetcode.com/problems/product-of-array-except-self/ --> Try finding optimized soln in less time
+https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ --> try after binary search is over
+https://leetcode.com/problems/jump-game/ --> try to find a better soln

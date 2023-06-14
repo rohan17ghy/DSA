@@ -1,0 +1,23 @@
+https://www.geeksforgeeks.org/sum-triangle-from-array/ --> write clean code and increase speed
+https://www.geeksforgeeks.org/recursive-programs-to-find-minimum-and-maximum-elements-of-array/ --> write clean code and increase speed
+https://leetcode.com/problems/binary-search/ --> write clean code and increase speed
+https://www.geeksforgeeks.org/first-uppercase-letter-in-a-string-iterative-and-recursive/ --> write clean code and increase speed
+https://leetcode.com/problems/reverse-string/ --> write clean code and increase speed
+https://practice.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1/ --> write clean code and increase speed
+https://leetcode.com/problems/fibonacci-number/ --> write clean code and increase speed
+https://www.codechef.com/problems/FIBXOR01/ --> write clean code and increase speed
+https://www.geeksforgeeks.org/program-for-length-of-a-string-using-recursion/ --> write clean code and increase speed
+https://practice.geeksforgeeks.org/problems/geek-onacci-number/0/ --> write clean code and increase speed
+https://www.geeksforgeeks.org/sum-digit-number-using-recursion/ --> all good, stop being scared of the problem
+https://www.geeksforgeeks.org/sum-of-natural-numbers-using-recursion/ --> all good, stop being scared of the problem
+https://leetcode.com/problems/power-of-two/ --> try to find the soln faster, also try with bit manipulation after completing that topic
+https://leetcode.com/problems/power-of-three/ --> try to find the soln faster, also try with bit manipulation after completing that topic
+See the approach 3 of the solution mentioned in solution tab
+https://leetcode.com/problems/power-of-four/ --> try to find the soln faster, also try with bit manipulation after completing that topic
+https://www.hackerrank.com/challenges/30-recursion/problem --> all good
+https://www.geeksforgeeks.org/program-check-array-sorted-not-iterative-recursive --> not attempted
+https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/ --> all good, stop being scared of the problem
+https://www.geeksforgeeks.org/check-for-balanced-parenthesis-without-using-stack/ --> The equivalent leetcode is https://leetcode.com/problems/valid-parentheses/
+Try to find the right soln and stop being scared of the problem
+https://www.geeksforgeeks.org/remove-consecutive-duplicates-string/ --> try to find the soln faster (test cases were run in vscode)
+https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/ --> find proper parameters and return types. Check Codes folder for reference

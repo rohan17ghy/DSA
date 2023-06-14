@@ -1,0 +1,16 @@
+--> When we pass some reference to a function like below
+def solve(self, arr, k, index, ans):
+
+Here we have passed a reference to ans variable. array pointed by ans will get changed when the method
+returns. DON'T CHANGE THE REFERENCE OF 'ans' VARIABLE ELSE IT WILL GIVE UNEXPECTED RESULT FOR ANS
+
+DON'T DO ans = something, instead change the values of ans 
+
+This error normally happens in recursion when we pass a ans variable in the method and after the method
+returns we are expecting to get the answer in ans variable
+
+--> When solving recursion problems if in between we change the number of arguments the recursion
+function is taking, then please change the parameters accordingly for the places where the recursive
+call is made
+
+--> Using a variable before it is referenced(Normally made in recursion)

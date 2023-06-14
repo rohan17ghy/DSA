@@ -1,0 +1,43 @@
+https://leetcode.com/problems/merge-sorted-array/ --> Try finding solution
+https://leetcode.com/problems/majority-element/ --> Try to find optimized soln
+https://leetcode.com/problems/contains-duplicate/ --> Try to increase speed
+https://leetcode.com/problems/intersection-of-two-arrays/ --> Try to increase speed
+https://leetcode.com/problems/intersection-of-two-arrays-ii/ --> Try to increase speed
+https://leetcode.com/problems/third-maximum-number/ --> Try to find optimized solution
+https://leetcode.com/problems/assign-cookies/ --> increase speed
+https://leetcode.com/problems/array-partition-i/ --> all good, revise
+https://leetcode.com/problems/maximum-product-of-three-numbers/ --> increase speed and find better soln
+https://leetcode.com/problems/sort-array-by-parity/ --> increase speed
+https://leetcode.com/problems/sort-array-by-parity-ii/ --> soln coded is beauty, but try to find it faster
+https://leetcode.com/problems/largest-perimeter-triangle/ --> optimize soln and also increase speed in reaching the soln  
+https://leetcode.com/problems/squares-of-a-sorted-array/ --> reduce the lines of code, increase speed 
+https://leetcode.com/problems/matrix-cells-in-distance-order/ --> increase speed, taking lot of time coding in python 2D Array concepts
+https://leetcode.com/problems/height-checker/ --> increase speed
+https://leetcode.com/problems/relative-sort-array/ --> optimize soln and increase speed
+https://leetcode.com/problems/minimum-absolute-difference/ --> Try for alternate soln
+https://leetcode.com/problems/rank-transform-of-an-array/ --> increase speed 
+https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/ --> find the soln of number of set bits
+https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/ --> find soln faster  
+https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/submissions/ --> done right
+https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/ --> done right 
+https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/ --> increase speed
+https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/ --> done right
+https://leetcode.com/problems/sort-array-by-increasing-frequency/ --> do practise later
+https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/ --> try to find the soln with reduced lines of code
+https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/ --> practise more to increase speed
+https://leetcode.com/problems/set-mismatch/ --> practise more to increase speed
+https://leetcode.com/problems/two-sum/ --> find soln faster
+
+Medium
+https://leetcode.com/problems/3sum/ --> Find soln faster and practise
+https://leetcode.com/problems/3sum-closest/ --> Find soln faster and practise
+https://leetcode.com/problems/4sum/ --> try to code clean and flawlessly
+https://leetcode.com/problems/group-anagrams/ --> try to find soln faster
+https://leetcode.com/problems/merge-intervals/ --> try to find the soln faster and practise coding it
+https://leetcode.com/problems/sort-colors/ --> Find better soln and try coding clean and flawless
+https://leetcode.com/problems/largest-number/ --> Find better soln and try coding clean and flawless
+https://leetcode.com/problems/kth-largest-element-in-an-array/ --> Try it once u are done with heaps
+
+
+ 
+

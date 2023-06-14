@@ -1,0 +1,8 @@
+Conversion of string to list --> list(s)
+Conversion of list to string --> ''.join(nums)
+Converting List of numbers to List of string --> map(str, nums)
+Converting to int --> int(s)
+Converting to string --> str(num)
+Converting ascii to character --> chr(ascii)
+Converting character to ascii/Unicode --> ord(ch)
+ 

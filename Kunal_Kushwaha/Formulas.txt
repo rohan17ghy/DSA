@@ -1,0 +1,11 @@
+Some formulas are written down in the notes copy. Refer that as well
+
+--> If "s[i]" is a letter and "shift" is a number which denotes number of times "s[i]". But the result should be a letter so the formula would be:
+   ((ord(s[i]) - ord('a') + shift) % 26) + ord('a')
+   Here we are assuming 'a' is 0 and 'z' is 25, so mod is 26, 0-25 will be remainder. There can be many formulas for this but this is intuitive
+
+--> Finding the decimal part of a number can be done with % 1
+Eg: 5.55 % 1 will be 0.55 from intuition
+Note: Please be cautious in using float numbers as they can have rounding error. See link below
+https://www.geeksforgeeks.org/problem-in-comparing-floating-point-numbers-and-how-to-compare-them-correctly/
+

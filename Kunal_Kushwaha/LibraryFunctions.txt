@@ -1,0 +1,601 @@
+There are four collection data types in the Python programming language:
+
+List is a collection which is ordered and changeable. Allows duplicate members.
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and changeable. No duplicate members.
+------------------------------------------------
+--> String.IsNullOrEmpty() equivalent in python is if(not str)
+--> arr.copy()
+--> [10, 20, 30, 40, 50]
+arr.remove(10) #[20, 30, 40, 50]
+arr.pop(2) #[20, 30, 50]
+------------------------------------------------
+Set --> stores unique values, unordered
+>>>a = set()
+>>>a.add('Set')
+>>>a
+{'Set'}
+>>>'Set' in a
+True
+>>>a.discard('Map')
+>>>a
+{'Set'}
+>>>a.remove('Map')
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    a.remove('Map')
+KeyError: 'Map'
+
+>>>a.discard('Set')
+>>>a
+set()
+------------------------------------------------
+Tuple --> ordered, unchangeable, indexed, allow duplicates
+
+>>> a = (1, 'Rohan')
+>>> a
+(1, 'Rohan')
+>>> a[0]
+1
+>>> a[1]
+'Rohan'
+>>> a[2]
+Traceback (most recent call last):
+  File "<pyshell#31>", line 1, in <module>
+    a[2]
+IndexError: tuple index out of range
+>>> len(a)
+2
+>>> 
+------------------------------------------------
+map(fun, iter)
+
+Parameters :
+fun : It is a function to which map passes each element of given iterable.
+iter : It is a iterable which is to be mapped.
+
+>>> numbers = (1, 2, 3, 4)
+>>> result = map(lambda x: x + x, numbers)
+>>> print(list(result))
+[2, 4, 6, 8]
+>>> 
+------------------------------------------------
+Sorting/sorted(iterable, key=None, reverse=False)
+
+--> Sorting with cmp_to_key()
+import functools
+  
+  
+def mycmp(a, b):
+    print("comparing ", a, " and ", b)
+    if a > b:
+        return 1
+    elif a < b:
+        return -1
+    else:
+        return 0
+  
+  
+print(sorted([1, 2, 4, 2], key=functools.cmp_to_key(mycmp)))
+
+--> Sorting with key
+print(sorted([1, 2, 4, 2], key=lambda x: x + x))
+
+
+--> Sorting 2D list
+>>>tasks = [[1,2], [1, 4], [1, 3], [5, 6], [5, 4]]
+//Sorting the list with 2nd key descending order, if second key is same then sorting with first key in descending order
+>>>tasks.sort(key=lambda x: (-x[1], -x[0]))
+>>>tasks
+[[5, 6], [5, 4], [1, 4], [1, 3], [1, 2]]
+
+For more details check out https://www.programiz.com/python-programming/methods/built-in/sorted
+
+------------------------------------------------
+Strings:
+
+--> Comparing two dictionary with key as a character from string is not O(n) but O(26) provided we are comparing only
+letters. So some questions we need to keep this in mind that we have only 26 letters and that can modify the time complexity
+
+>>>s = "String"
+>>>ss = set(s)
+>>>ss
+{'r', 'i', 'S', 't', 'g', 'n'}
+>>>s[0].swapcase()
+'s'
+
+>>>s = 'string'
+>>>for i, char in enumerate(s):
+   	print(i, char)
+
+    
+0 s
+1 t
+2 r
+3 i
+4 n
+5 g
+
+Reversing a string
+str1[::-1]
+
+Note: is compares id(reference) and == compares actual value. Concept of string pool is also valid
+Eg
+>>> s1 = "Rohan"
+>>> s2 = "Rohan"
+>>> id(s1)
+2565084730672
+>>> id(s2)
+2565084730672
+
+Id of s1 and s2 are same because of string pool
+
+
+>>> s = "Rohan"
+>>> s[:2].isalnum()
+True
+>>> s[:2].isalpha()
+True
+>>> s[:2].isnumeric()
+False
+>>> num = "13432424"
+>>> num.isnumeric()
+True
+
+String Comparison
+>>> num1 = "abc"
+>>> num2 = "a"
+>>> num1 > num2
+True
+>>> num3 = "b"
+>>> num1 > num3
+False
+
+For more info check : https://www.educative.io/answers/how-to-compare-two-strings-in-python
+
+num1 = "abc"
+num1.isupper()
+False
+num1.islower()
+True
+
+s = "101011"
+'01' in s
+True
+s.replace("01", "10")
+'110101'
+
+s = '1234'
+>>>s.lstrip('1')
+'234'
+>>>s.rstrip('1')
+'1234'
+>>>s.rstrip('4')
+'123'
+>>>s
+'1234'
+>>>s.strip('1')
+'234'
+
+
+---------------------------------------------------
+Lists
+
+>>> arr = [1, 2, 3, 4]
+>>> arr.append(5)
+>>> arr
+[1, 2, 3, 4, 5]
+>>> arr.pop()
+5
+>>> arr
+[1, 2, 3, 4]
+>>> arr.remove(2)
+>>> arr
+[1, 3, 4]
+
+>>> arr = [1, 2, 4]
+>>> sum(arr)
+7
+>>> max(arr)
+4
+>>> arr.index(2)
+1
+>>>arr.reverse()
+>>>arr
+[4, 2, 1]
+
+itertools.groupby()
+--> Groups consecutive elements based on a key and generates an iterable
+>>>nums = [1,2,3,3,2,2]
+>>>for g, t in itertools.groupby(nums):
+>>>    print(g, " ", list(t))
+    
+1   [1]
+2   [2]
+3   [3, 3]
+2   [2, 2]
+
+>>>data = [(1032, 'ETH'), (1045, 'ETH'), (21312, 'KAT'), (2123, 'NOT'), (1238, 'NOT'), (71239, 'NOT')]
+>>>for g, t in itertools.groupby(data, key= lambda x: x[1]):
+>>>    print(g, " ", list(t))
+
+ETH   [(1032, 'ETH'), (1045, 'ETH')]
+KAT   [(21312, 'KAT')]
+NOT   [(2123, 'NOT'), (1238, 'NOT'), (71239, 'NOT')]
+----------------------------------------------------
+Heaps
+
+heappush() 
+>>> import heapq
+>>> heap = []
+>>> heapq.heappush(heap, 10)
+>>> heap
+[10]
+>>> heapq.heappush(heap, 1)
+>>> heap
+[1, 10]
+>>> heapq.heappush(heap, 5)
+>>> heap
+[1, 10, 5]
+
+
+heappop()
+>>> heapq.heappop(heap)
+1
+>>> heap
+[5, 10]
+>>> heapq.heappop(heap)
+5
+>>> heap
+[10]
+
+heapify()
+>>>list1 = [1, 3, 5, 2, 4, 6]
+>>>heapq.heapify(list1)
+>>>list1
+[1, 2, 5, 3, 4, 6]
+
+heappushpop() --> first doing heappush() then doing heappop()
+>>>list1
+[1, 2, 5, 3, 4, 6]
+>>>heapq.heappushpop(list1, 89)
+1
+>>>list1
+[2, 3, 5, 89, 4, 6]
+
+
+heapreplace() --> first doing heappop() and then doing heappush()
+
+Non-numeric data in heap --> 
+>>>minHeap = []
+>>>heapq.heappush(minHeap, (2, 'a'))
+>>>minHeap
+[(2, 'a')]
+>>>heapq.heappush(minHeap, (1, 'b'))
+>>>minHeap
+[(1, 'b'), (2, 'a')]
+>>>heapq.heappush(minHeap, (-5, 'z'))
+>>>minHeap
+[(-5, 'z'), (2, 'a'), (1, 'b')]
+>>>heapq.heappush(minHeap, (5, 'A'))
+>>>minHeap
+[(-5, 'z'), (2, 'a'), (1, 'b'), (5, 'A')]
+>>>heapq.heappush(minHeap, (2, 'A'))
+>>>minHeap
+[(-5, 'z'), (2, 'A'), (1, 'b'), (5, 'A'), (2, 'a')]
+
+Conclusion: During heapifying the first element of tuple is considered first, then the second. 
+
+------------------------------------------------------------------------
+dictionary
+
+Iterating a dictionary:
+>>>statesAndCapitals = {"Assam": 'Dispur', 'WestBengal': 'Kolkata', 'Maharashtra': 'Mumbai'}
+>>>for state in statesAndCapitals:
+>>>    print(state)
+
+    
+Assam
+WestBengal
+Maharashtra
+>>>for state in statesAndCapitals.keys():
+>>>    print(state)
+
+    
+Assam
+WestBengal
+Maharashtra
+>>>for capital in statesAndCapitals.values():
+>>>    print(capital)
+
+    
+Dispur
+Kolkata
+Mumbai
+>>>for state, capital in statesAndCapitals.items():
+>>>    print(state, '-> ', capital)
+
+    
+Assam ->  Dispur
+WestBengal ->  Kolkata
+Maharashtra ->  Mumbai
+
+Removing a key and it's value from a dictionary -->
+>>>a = {}
+>>>a['1'] = 'Rohan'
+>>>a
+{'1': 'Rohan'}
+>>>a['2'] = 'Raj'
+>>>a
+{'1': 'Rohan', '2': 'Raj'}
+>>>a.pop('1')
+'Rohan'
+>>>a
+{'2': 'Raj'}
+-------------------------------------------------------------------------
+SortedList
+
+>>>from sortedcontainers import SortedList
+>>>sl = SortedList()
+>>>sl.add(1)
+>>>sl.add(2)
+>>>list(sl)
+[1, 2]
+>>>sl.discard(1)
+>>>sl.discard(0)
+>>>list(sl)
+[2]
+>>>sl.add(4)
+>>>sl.add(5)
+>>>sl
+SortedList([2, 4, 5])
+>>>for num in sl:
+   	print(num)   
+2
+4
+5
+
+>>>sl
+SortedList([2])
+>>>a = [4]
+>>>a.extend(sl)
+>>>a
+[4, 2]
+
+Finding the index of an element: Similar to searching for an element in a BST
+>>>sl = SortedList([10, 11, 12, 13, 14])
+>>>sl = SortedList([5, 10, 15, 20, 25])
+>>>sl.bisect_right(13)
+2
+>>>sl.bisect_left(13)
+2
+>>>sl.bisect_right(15)
+3
+>>>sl.bisect_left(15)
+2
+>>>sl.add(15)
+>>>sl
+SortedList([5, 10, 15, 15, 20, 25])
+>>>sl.discard(15) --> Removes 1 element even if multiple are present
+>>>sl
+SortedList([5, 10, 15, 20, 25])
+>>>sl.pop(2) --> Removes the element at given index
+15
+>>>sl.add(10)
+>>>s
+SortedList([5, 10, 10, 20, 25])
+>>>s.count(10)
+2
+
+--------------------------------------------------------------------------------
+SortedDict()
+
+>>>from sortedcontainers import SortedDict
+>>>sd = SortedDict()
+>>>sd.update({'a': 1})
+>>>sd
+SortedDict({'a': 1})
+>>>sd.update({'v': 0})
+>>>sd
+SortedDict({'a': 1, 'v': 0})
+>>>sd.pop('a')
+1
+>>>sd
+SortedDict({'v': 0})
+>>>sd.pop('a', "No Key")
+'No Key'
+>>>sd
+SortedDict({'v': 0})
+--------------------------------------------------------------------------------
+Counter
+
+>>>from collections import Counter
+>>>str = "RRRohan"
+>>>map = Counter(str)
+>>>for i in map:
+	print(i)
+R
+o
+h
+a
+n
+
+Iterating Counter
+>>>map
+Counter({'R': 3, 'o': 1, 'h': 1, 'a': 1, 'n': 1})
+>>>for key in map:
+   	print(key, " ", map[key])    
+R   3
+o   1
+h   1
+a   1
+n   1
+
+>>>map
+Counter({'R': 3, 'o': 1, 'h': 1, 'a': 1, 'n': 1})
+>>>for key, val in map.items():
+   	print(key, " ", val)    
+R   3
+o   1
+h   1
+a   1
+n   1
+
+most_common()
+>>>nums= [4, 3, 2, 4, 5, 3, 6]
+>>>c = Counter(nums)
+>>>c
+Counter({4: 2, 3: 2, 2: 1, 5: 1, 6: 1})
+>>>c.most_common(1)
+[(4, 2)]
+>>>c
+Counter({4: 2, 3: 2, 2: 1, 5: 1, 6: 1})
+>>>c.most_common(3)
+[(4, 2), (3, 2), (2, 1)]
+
+
+--> Difference between counter and normal dictionary is that value of each key of counter will be only number.
+Counter supports mathematical and logical operations like +, -, >, <, ==. It is quite useful in string questions
+https://www.geeksforgeeks.org/operations-on-python-counter/
+
+>>>ctr1
+Counter({'R': 1, 'o': 1, 'h': 1, 'a': 1, 'n': 1})
+>>>ctr2
+Counter({'R': 2, 'a': 1, 'j': 1})
+>>>ctr1 > ctr2
+False
+>>>ctr2 > ctr1
+False
+
+>>>ctr1
+Counter({'R': 1, 'o': 1, 'h': 1, 'a': 1, 'n': 1})
+>>>ctr2 = collections.Counter("RRohan")
+>>>ctr2
+Counter({'R': 2, 'o': 1, 'h': 1, 'a': 1, 'n': 1})
+>>>ctr2 > ctr1
+True
+--------------------------------------------------------------------------------
+defaultdict
+
+--> similar to dict, difference is it can handle queries for missing keys
+--> If we query for missing key, it will add that key to dictionary. Example below
+>>>a = collections.defaultdict(int)
+>>>a
+defaultdict(<class 'int'>, {})
+>>>a[4]
+0
+>>>a
+defaultdict(<class 'int'>, {4: 0})
+-------------------------------------------------------------------------------------
+deque (can be used for normal queue)
+
+>>>from collections import deque
+>>>q = deque([]) #Initialize with a list[] else might get an error while append()
+>>>q.append(1)
+>>>q.appendleft(2)
+>>>q
+deque([2, 1])
+>>>q.extend([3, 4, 5])
+>>>q
+deque([2, 1, 3, 4, 5])
+>>>q.extendleft([7, 8])
+>>>q
+deque([8, 7, 2, 1, 3, 4, 5])
+>>>q.pop()
+5
+>>>q
+deque([8, 7, 2, 1, 3, 4])
+>>>q.popleft()
+8
+>>>q
+deque([7, 2, 1, 3, 4])
+
+Time complexity of the above operations except for extend() is O(1)
+----------------------------------------------------------------------------------------
+BITS 
+
+>>> a = 5
+>>> a.bit_count()
+2
+>>> a = 4
+>>> a.bit_count()
+1
+>>> a = 6
+>>> a.bit_count()
+2
+----------------------------------------------------------------------------------------
+bisect
+
+>>>import bisect
+>>>nums = [1, 2, 3, 5, 6]
+>>>bisect.bisect_left(nums, 4)
+3
+>>>bisect.bisect_right(nums, 4)
+3
+>>>nums = [1, 2, 3, 4, 4, 4, 4, 5, 5, 6]
+>>>bisect.bisect_left(nums, 4)
+3
+>>>bisect.bisect_right(nums, 4)
+7
+---------------------------------------------------------------------------------------
+Comparison Dunder methods: __lt__, __gt__, __eq__ i.e. <, >, ==
+--> The python __eq__ default implementation, which is used to implement the equality operator (==),
+simply checks for object identity. This means that two objects are considered equal only if they are the same object in memory. 
+
+So we can compare two objects with == like objectA == objectB
+
+--> But for other methods __lt__ and __gt__ there is no default implementation so we can't compare two objects
+	If objectA and objectB are objects of class TreeNode
+	objectA < objectB will give a TypeError: '<' not supported between instances of 'TreeNode' and 'TreeNode'
+---------------------------------------------------------------------------------------
+Randomized
+
+>>> random.randint(0, 3)
+>>> 3
+>>> random.randint(0, 3)
+>>> 3
+>>> random.randint(0, 3)
+>>> 1
+>>> random.randint(0, 3)
+>>> 1
+>>> random.randint(0, 3)
+>>> 3
+>>> random.randint(0, 3)
+>>> 3
+>>> random.randint(0, 3)
+>>> 3
+>>> random.randint(0, 3)
+>>> 1
+>>> random.randint(0, 3)
+>>> 0
+-----------------------------------------------------------------------------------------
+Negative number divison
+--> Negative number divison gives unexpected result
+Eg:
+>>> 6 //-132
+-1
+
+This is a python problem, to resolve this use below code
+>>> b = 6
+>>> a = -10
+>>> sign = -1 if (a < 0) ^ (b < 0) else 1
+>>> r = abs(b) // abs(a) 
+>>> sign * r
+0
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 

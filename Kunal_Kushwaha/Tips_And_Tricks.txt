@@ -1,0 +1,9 @@
+--> Sometimes it is better if we handle a part of the problem alone, and make separate functions for different small problems.
+This reduces the chances of error with variables and makes cleaner code
+--> Whenever we are trying to solve a complicated problem(or which needs mathematical computation), use pen paper 
+and write down all the equations and also wat would be the variable conditions and corner cases, then try to code it. Don't try to start coding when u 
+understand the problem or have a soln. Exception can be when it is very easy. Like how it is done in this video https://www.youtube.com/watch?v=5NdhK3tZViQ
+
+--> If we have to work with a dictionary with key as english alphabets then the space complexity will not be O(n) but it will be O(26).
+This is a key point that i miss
+       

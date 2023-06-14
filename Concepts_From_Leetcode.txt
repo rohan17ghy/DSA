@@ -1,0 +1,84 @@
+Stacks
+
+--> https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
+Stack can be used, but the unbalanced brackets can be tracked even without the stack so space complexity can be reduced to O(1)
+--> https://leetcode.com/problems/design-a-stack-with-increment-operation/submissions/
+Lazy Increment. To change some items in the stack, it's always not needed to pop the value from the stack immediately
+increment can be done in O(1) time complexity. Watch @lee215 code in discussion section
+
+Python
+--> Closure variables
+When do we have closures?
+We have a closure in Python when a nested function references a value in its enclosing scope.
+
+The criteria that must be met to create closure in Python are summarized in the following points.
+
+We must have a nested function (function inside a function).
+The nested function must refer to a value defined in the enclosing function.
+The enclosing function must return the nested function.
+
+We can't re-bind the closure variables directly. Have to use the nonlocal keyword
+Eg:
+
+
+-----------------------------------------------------------------------------------------------
+--> nonlocal
+Scope --> https://www.youtube.com/watch?v=QVdf0LgmICw
+To understand nonlocal first watch the above scope video
+nonlocal is used when we want to re-assign the values in the enclosing scope 
+
+def myfunc1():
+    total = 4
+    def myfunc2():                  
+        total += 3
+    myfunc2()
+    print(total)
+
+myfunc1()
+
+The above code will give an exception that "local variable 'total' referenced before assignment" because 
+we are doing total = total + 3, here total is considered a variable in local scope because we are assigning it without 
+the non-local keyword. total is not there in local scope so it gives this error.
+
+def myfunc1():
+    total = 4
+    def myfunc2():                  
+        print(total + 3)
+    myfunc2()  
+
+myfunc1()
+
+The above code will print 7. The total variable inside myfunc2() takes the value of the enclosing scope total variable.
+
+Conclusion: WE CAN READ AN ENCLOSING SCOPE VALUE DIRECTLY, BUT WE CANNOT RE-ASSIGN IT DIRECTLY. FOR RE-ASSIGNING ENCLOSING
+SCOPE VARIABLES WE NEED THE nonlocal KEYWORD.   
+
+--------------------------------------------------------------------------
+SortedList (Equivalent of multiset in C++)
+--> Multiset and SortedList both can contain duplicates
+--> Implemented using Balanced BST
+--> Elements are in sorted order
+--> Elements can't be modified, only added and removed
+--> Duplicate elements are allowed
+--> Insert, remove, get index, bisect right and left, find element inside list, are all log(n) operations.
+Its similar to treeset and multiset in java and c++, implemented with AVL tree or red black tree.
+
+--------------------------------------------------------------------------
+SortedDictionary(equivalent of ordered map in C++)
+--> Sorted dict keys are maintained in sorted order
+
+-----------------------------------------------------------------------------
+Dictionary and Default Dictionary
+
+--> Dictionary in Python is an unordered collection of data values that are used to store data values like a map.
+--> In Dictionary, the key must be unique and immutable.
+This means that a Python Tuple can be a key whereas a Python List can not
+--> Sometimes, when the KeyError is raised, it might become a problem. To overcome this Python introduces another dictionary
+like container known as Defaultdict which is present inside the collections module.
+--> The functionality of both dictionaries and defaultdict are almost same except for the fact that defaultdict
+never raises a KeyError. It provides a default value for the key that does not exists.
+
+Syntax: defaultdict(default_factory)
+Parameters:
+default_factory: A function returning the default value for the dictionary defined.
+If this argument is absent then the dictionary raises a KeyError.

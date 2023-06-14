@@ -1,0 +1,49 @@
+https://leetcode.com/problems/defanging-an-ip-address/ --> Practise
+https://leetcode.com/problems/shuffle-string/ --> Practise
+https://leetcode.com/problems/goal-parser-interpretation/ --> Practise
+https://leetcode.com/problems/count-items-matching-a-rule/ --> Practise
+https://leetcode.com/problems/sorting-the-sentence/ --> Practise
+https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/ --> Practise
+https://leetcode.com/problems/to-lower-case/ --> Practise
+https://leetcode.com/problems/determine-if-string-halves-are-alike/ --> Practise
+https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/ --> Try to find better soln and write code
+https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/ --> try to find better soln and practise the code
+https://leetcode.com/problems/robot-return-to-origin/ --> practise, try to do with tuple
+https://leetcode.com/problems/reverse-words-in-a-string-iii/ --> increase speed and do clean code
+https://leetcode.com/problems/excel-sheet-column-title/ --> try to find the soln faster and accurately. To understand complete analysis refer:
+--> https://leetcode.com/problems/excel-sheet-column-title/discuss/441430/Detailed-Explanation-Here's-why-we-need-n-at-first-of-every-loop-(JavaPythonC%2B%2B)
+https://leetcode.com/problems/implement-strstr/ --> KMP algorithm, practise the code implementation
+https://leetcode.com/problems/long-pressed-name/ --> Try to find better soln and write clean code accurately
+https://leetcode.com/problems/valid-palindrome/ --> increase speed
+https://leetcode.com/problems/valid-palindrome-ii/ --> try cleaner code
+https://leetcode.com/problems/longest-common-prefix/ --> try cleaner code
+https://leetcode.com/problems/maximum-repeating-substring/ --> try cleaner code
+https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/ --> increase speed and cleaner code
+https://leetcode.com/problems/merge-strings-alternately/ --> increase speed
+https://leetcode.com/problems/reverse-prefix-of-word/ --> increase speed
+https://leetcode.com/problems/roman-to-integer/ --> reduce no of lines in code and increase speed
+https://leetcode.com/problems/valid-parentheses/ --> increase speed and write accurately
+https://leetcode.com/problems/length-of-last-word/ --> increase speed
+
+Medium 
+https://leetcode.com/problems/jump-game-vii/ --> Come back after graphs are done
+https://leetcode.com/problems/split-two-strings-to-make-palindrome/ --> Try finding soln and write cleaner code, increase speed
+https://leetcode.com/problems/number-of-ways-to-split-a-string/ --> Couldn't solve, struggled a lot, try solving next time (with code not only logic)
+https://leetcode.com/problems/sentence-similarity-iii/ --> struggled at beggining, try to find the soln faster and write the code cleanly without spaghetti code
+Also try again once dequeue is done 
+https://leetcode.com/problems/repeated-string-match/ --> try to find a soln, and write code accurately 
+https://leetcode.com/problems/next-greater-element-iii/ --> try to find a soln and write code accurately
+https://leetcode.com/problems/maximum-number-of-removable-characters/ --> try to find a soln and write code accurately
+https://leetcode.com/problems/swap-adjacent-in-lr-string/ --> Almost got the logic, try finding the exact logic next time and write code accurately
+https://leetcode.com/problems/multiply-strings/ --> Try to find the soln and equations
+https://leetcode.com/problems/basic-calculator-ii/ --> Come back after doing stacks
+https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/ --> write accurate and clean code
+https://leetcode.com/problems/number-of-substrings-with-only-1s/ --> try to remember formula and write clean code without struggle, more elgant code is written
+by lee below --> https://leetcode.com/problems/number-of-substrings-with-only-1s/discuss/731580/JavaC%2B%2BPython-Count
+https://leetcode.com/problems/count-number-of-homogenous-substrings/ --> write clean code without struggle
+https://leetcode.com/problems/get-equal-substrings-within-budget/ --> try to find out the soln and write clean code without struggle
+https://leetcode.com/problems/shifting-letters/ --> try to write code accurately without struggle
+
+
+
+
