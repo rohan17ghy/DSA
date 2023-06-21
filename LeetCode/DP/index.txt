@@ -42,11 +42,15 @@ DP Patterns:
     --> Longest Path in DAG DP(this terminology is used by ProgrammingLiveWithLarry)
         -DP_On_LIS\368_Largest_Divisible_Subset_Medium.py
         -DP_On_LIS\1048_Longest_String_Chain_Medium.py
+    
+    --> DP with BitMask
+        -2741_Special_Permutations_Medium.py
 
 DP Good Questions
     --> 983_MinimumCostForTckets_Medium.py
     --> DP_On_LIS\673_Number_Of_LIS_Medium.py
     --> 879_Profitable_Schemes_Hard.py
+    --> 1187_Make_Array_Strictly_Increasing.py
 
 DP optimized by greedy
     --> 1402_Reducing_Dishes_Hard.py
