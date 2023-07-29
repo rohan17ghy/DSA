@@ -55,5 +55,8 @@ DP Good Questions
 DP optimized by greedy
     --> 1402_Reducing_Dishes_Hard.py
 
+DP problems which are easier when we think Bottom up
+    --> 1218_LongestSubsequenceDifference_Medium.py    
+
 
     

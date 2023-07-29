@@ -1,25 +1,37 @@
 class Solution:
-    def specialPerm(self, nums) -> int:
-        MOD = 10 ** 9 + 7
+    def longestArithSeqLength(self, nums) -> int:
         N = len(nums)
-        
-        #Total permutations when previous element is "prev" with current mask "mask"
-        def permutate(prev, mask):
-            if mask >= ((1 << N) - 1):
-                return 1
+        dp = {}
+        #Return the longest arithmetic subsequence from i....N starting with i and 
+        #difference "diff" 
+        def LAS(i, diff):
+            if (i, diff) in dp:
+                return dp[(i, diff)]
+            
+            if i == 7 and diff == 0:
+                print('Breakpoint')
 
-            total = 0
-            for i in range(N):
-                if mask & (1 << i) == 0:
-                    if prev % nums[i] == 0 or nums[i] % prev == 0:
-                        total += permutate(nums[i], mask | (1 << i)) % MOD
-            return total
+            best = 1
+            for j in range(i+1, N):                
+                if not diff:
+                    best = max(best, 1 + LAS(j, nums[j]-nums[i]))
+                elif nums[j] - nums[i] == diff:
+                    best = max(best, 1 + LAS(j, diff))
 
-        return permutate(1, 0)
+            dp[(i, diff)] = best
+            
+            return best
+
+        for i in range(N):
+            LAS(i, None)
+
+        print(dp)
+        return max(dp.values())
+
         
 
 
 if __name__ == '__main__':
-    arr1 = [2, 3, 6]
+    nums = [24,13,1,100,0,94,3,0,3]
     sol = Solution()
-    print(sol.specialPerm(arr1))
+    print(sol.longestArithSeqLength(nums))
