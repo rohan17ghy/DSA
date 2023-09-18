@@ -45,12 +45,16 @@ DP Patterns:
     
     --> DP with BitMask
         -2741_Special_Permutations_Medium.py
+    
+    --> Catalan's sequence
+        -95_Unique_BST_2_Medium.py
 
-DP Good Questions
+DP Good/Hard Questions
     --> 983_MinimumCostForTckets_Medium.py
     --> DP_On_LIS\673_Number_Of_LIS_Medium.py
     --> 879_Profitable_Schemes_Hard.py
     --> 1187_Make_Array_Strictly_Increasing.py
+    --> https://leetcode.com/problems/strange-printer/ --> https://www.youtube.com/watch?v=YjaMOMoMNm0
 
 DP optimized by greedy
     --> 1402_Reducing_Dishes_Hard.py
