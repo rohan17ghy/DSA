@@ -91,6 +91,23 @@ print(sorted([1, 2, 4, 2], key=lambda x: x + x))
 [[5, 6], [5, 4], [1, 4], [1, 3], [1, 2]]
 
 For more details check out https://www.programiz.com/python-programming/methods/built-in/sorted
+=====================
+Stability in sorting algo
+If the key function returns the same value for multiple elements in the list, the sort() method (or the sorted() function) will maintain the relative order of those elements.
+This behavior is known as stability in sorting algorithms. Python's built-in sorting algorithm (Timsort) is stable, meaning that when two records have the same key,
+their original order is preserved in the sorted output.
+
+Here's an example to illustrate this:
+
+python
+Copy code
+# List of tuples where the second element is the same for some tuples
+tuples = [(1, 'apple'), (3, 'banana'), (2, 'apple'), (4, 'banana')]
+
+# Sorting the list using the second element as the key
+tuples.sort(key=lambda x: x[1])
+print(tuples)
+# Output: [(1, 'apple'), (2, 'apple'), (3, 'banana'), (4, 'banana')]
 
 ------------------------------------------------
 Strings:

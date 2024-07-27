@@ -11,3 +11,8 @@ Offset approach
 ---------------
 --> See the question maxLen_RepeatedSubArray.py in TwoPointer folder
 https://leetcode.com/problems/maximum-length-of-repeated-subarray/
+
+Wormhole teleportation technique
+-------------------------------
+https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/description/
+https://www.youtube.com/watch?v=65wVufni3tg
