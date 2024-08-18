@@ -6,3 +6,6 @@
 
 --> Greedy with sorting
     -2542_MaxSubSeqScore_Medium.py     
+
+--> Max Min greedy
+    -624_MaxDistance_Arrays.py

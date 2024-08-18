@@ -14,6 +14,10 @@ Patterns
         -126_WordLadder2_Hard.py
     --> dfsVisited concept
         -2360_LongestCycleInGraph_Hard.py
+    --> Convert problem to a graph problem
+	    -959_RegionsCutBySlashes_Medium.py
+    --> Color graph
+        -827_MakingLargerIsland_Hard.py
 
 Algorithms
     --> Kahn algorithm(Topo Sort)

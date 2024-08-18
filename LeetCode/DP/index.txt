@@ -61,7 +61,7 @@ DP optimized by greedy
 
 DP problems which are easier when we think Bottom up
     --> 1218_LongestSubsequenceDifference_Medium.py
-    --> 1395_CountNumberOfTeams.py	    
+    --> 1395_CountNumberOfTeams.py
 
 
     

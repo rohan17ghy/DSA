@@ -3,6 +3,9 @@
 
 
 --> Concepts
+    -Find the prime factors of a number n
+        --> findAllPrimeFactors.py
+
 	-The median minimizes the sum of absolute deviations
 		--> Check out https://leetcode.com/problems/make-k-subarray-sums-equal/description/
 		--> Proof: https://math.stackexchange.com/questions/113270/the-median-minimizes-the-sum-of-absolute-deviations-the-ell-1-norm/113336#113336

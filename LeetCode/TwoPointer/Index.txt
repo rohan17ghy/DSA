@@ -3,3 +3,7 @@ Conceptual Questions
 
 Pattern
     --> Offset pattern : maxLen_RepeatedSubArray.py
+
+
+Good Problems
+    -> 719_Kth_Smallest_Pair_Distance.py

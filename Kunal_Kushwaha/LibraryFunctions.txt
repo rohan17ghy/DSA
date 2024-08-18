@@ -427,6 +427,8 @@ SortedDict({'v': 0})
 --------------------------------------------------------------------------------
 Counter
 
+-> Counter acts like a defaultdict i.e. if key doesn't exist than it returns 0
+
 >>>from collections import Counter
 >>>str = "RRRohan"
 >>>map = Counter(str)
