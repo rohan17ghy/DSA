@@ -10,6 +10,7 @@ Binary Search on answer
 --> 2187_MinTimeToCompleteTrips_Medium.py
 --> 1539_KthMissingPosNum_Medium.py
 --> 719_Kth_Smallest_Pair_Distance.py
+--> 1760_MinLimitOfBallsInABag.py
 
 Ternary Search
 --> 2448_MinCostToMakeArrEqual_Hard.py

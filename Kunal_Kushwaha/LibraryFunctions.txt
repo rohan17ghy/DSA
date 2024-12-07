@@ -602,8 +602,33 @@ This is a python problem, to resolve this use below code
 >>> r = abs(b) // abs(a) 
 >>> sign * r
 0
+--------------------------------------------------------------------------------------------
+int()
 
+=> int also involves sign(both positive and negative)
+>> int('23')
+23
+>> int('-10')
+-10
+>> int('+14')
+14
+---------------------------------------------------------------------------------------------
+Regular expression
 
+import re
+
+>> expression = "19/4-6/4+10/4"
+>> re.findall("[+-]?\d+", expression)
+['19', '4', '-6', '4', '+10', '4']
+-----------------------------------------------------------------------------------------------
+Enumerator
+
+>> nums = [1, 2, 3, 4]
+>> enmtr = enumerate(nums)
+>> next(enmtr)
+(0, 1)
+>> next(enmtr)
+(1, 2)
 
 
 

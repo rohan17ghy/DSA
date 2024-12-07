@@ -1,0 +1,3 @@
+Ashish Pratap Singh -> https://github.com/ashishps1/awesome-leetcode-resources?tab=readme-ov-file
+Sahil -> https://instabyte.io/p/interview-master-100
+Sahil -> https://instabyte.io/p/dsa-master

@@ -13,3 +13,6 @@
 	-Sieve of erathosthenes
 		--> https://leetcode.com/problems/count-primes/description/
 		--> Check out https://www.youtube.com/watch?v=QDFM7Mjk2mc
+
+	-GCD/HCF of two number
+		-> python library fn: math.gcd(a, b) 
