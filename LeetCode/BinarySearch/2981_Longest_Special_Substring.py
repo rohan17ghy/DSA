@@ -39,9 +39,6 @@ class Solution:
                     return True
             return False
 
-
-
-
         while start < end:
             mid = (start + end + 1) // 2
             if isGood(mid):
