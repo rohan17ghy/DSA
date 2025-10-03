@@ -1,0 +1,22 @@
+Counter
+In python
+>>> nums = ['R', 'o', 'h', 'a', 'n', 'R', 'R']
+>>> collections.Counter(nums)
+Counter({'R': 3, 'o': 1, 'h': 1, 'a': 1, 'n': 1})
+
+In JS
+const nums = ['R', 'o', 'h', 'a', 'n', 'R', 'R']
+counter = {}
+nums.forEach(val => counter[val] = (counter[val] || 0) + 1)
+------------------------------------------------------------------
+Object keys & values
+
+In python
+>>> obj = { 'name': 'Rohan', 'age': 23 }
+>>> obj.keys()
+>>> obj.values()
+
+In JS
+obj = { name: 'Rohan', age: 23 }
+Object.keys(obj)
+Object.values(obj)
