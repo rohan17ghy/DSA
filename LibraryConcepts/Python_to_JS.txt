@@ -8,7 +8,27 @@ In JS
 const nums = ['R', 'o', 'h', 'a', 'n', 'R', 'R']
 counter = {}
 nums.forEach(val => counter[val] = (counter[val] || 0) + 1)
-------------------------------------------------------------------
+
+One-liner
+const count = s => nums.reduce((m, c) => (m[c] = (m[c] || 0) + 1, m), {});
+
+Counter class
+  class Counter {
+    constructor(str) {
+      Object.assign(this, [...str].reduce((acc, char) => (
+        acc[char] = (acc[char] || 0) + 1, acc
+      ), {}));
+    }
+
+    eq(b) {
+      const a = this;
+      return (
+        Object.keys(a).length === Object.keys(b).length &&
+        Object.entries(a).every(([k, v]) => b[k] === v)
+      );
+    }
+  }
+-------------------------------------------------------------------------
 Object keys & values
 
 In python
@@ -20,3 +40,29 @@ In JS
 obj = { name: 'Rohan', age: 23 }
 Object.keys(obj)
 Object.values(obj)
+--------------------------------------------------------------------------
+converting set to list
+In python
+s = set()
+list(s)
+
+In JS
+const s = new Set();
+[...s]
+--------------------------------------------------------------------------
+Creating array
+in python
+
+arr = [0] * 26;
+
+In JS
+arr = new Array(26).fill(0)
+---------------------------------------------------------------------------
+char code
+In python
+ord(ch) - ord('a')
+
+In JS
+ch.charCodeAt(0) - 'a'.charCodeAt(0) 
+			OR
+ch.charCodeAt() - 'a'.charCodeAt()
