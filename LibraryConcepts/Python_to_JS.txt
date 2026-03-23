@@ -66,3 +66,4 @@ In JS
 ch.charCodeAt(0) - 'a'.charCodeAt(0) 
 			OR
 ch.charCodeAt() - 'a'.charCodeAt()
+----------------------------------------------------------------------------
