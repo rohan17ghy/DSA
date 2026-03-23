@@ -1,0 +1,20 @@
+# --- Obsidian core ---
+# Obsidian
+**/.obsidian/workspace*
+**/.obsidian/cache/
+**/.obsidian/graph.json
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+
+# --- Logs / temp ---
+*.log
+*.tmp
+
+# --- Node (if using plugins/dev tools) ---
+node_modules/
+
+# --- Env / secrets ---
+.env
+.env.*
