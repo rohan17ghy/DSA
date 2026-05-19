@@ -1,0 +1,80 @@
+---
+description: Obsidian DSA notes layout — general theory, Excalidraw embed, and per-problem files
+globs: Notes/**/*
+alwaysApply: false
+---
+
+# Obsidian notes structure (DSA/Notes)
+
+When creating or extending algorithm/pattern notes in this repo, mirror the **Binary Search** / **Line Sweep** layout.
+
+## Folder per pattern
+
+```
+Notes/
+  {Pattern}/                          # e.g. BinarySearch, LineSweep
+    {Pattern} general theory.md         # hub: diagram + template code
+    Ex-{Pattern_Snake}.md               # Obsidian Excalidraw (compressed-json)
+    {leetcode#}. {Problem Title}.md     # thin problem note → links to general theory
+  Excalidraw/
+    {Pattern-Name}.excalidraw           # drawing source (optional; sync with Ex-*.md)
+```
+
+## 1. `{Pattern} general theory.md` (hub)
+
+- YAML-style tags on line 1: `#patternTag #tle #template` (match existing tags in sibling notes)
+- Embed the Excalidraw companion (width 1000):
+
+  `![[Ex-{Pattern_Snake} | 1000]]`
+
+- Section `# Complete Code` with a single template solution:
+
+  ` ```python title:{fileName}.py ` … user's naming (`years`, `current`, `best`, etc.)
+
+- **Do not** embed `Excalidraw/*.excalidraw` directly here — use `Ex-*.md` only.
+
+## 2. `Ex-{Pattern_Snake}.md` (Obsidian Excalidraw)
+
+- Frontmatter:
+
+  ```yaml
+  ---
+  excalidraw-plugin: parsed
+  tags: [excalidraw]
+  ---
+  ```
+
+- Standard warning block (switch to EXCALIDRAW VIEW / decompress)
+- `# Excalidraw Data` → `## Text Elements` (one line per label + ` ^elementId`)
+- `%%` → `## Drawing` → ` ```compressed-json ` (LZString base64 of `.excalidraw` JSON) → closing ` ``` ` → `%%`
+
+Regenerate from `Excalidraw/*.excalidraw` when the drawing is edited outside Obsidian.
+
+## 3. `{#}. {Problem Title}.md` (per problem)
+
+- Tags: `#patternTag #Difficulty`
+- Short pointer only — **no** duplicate diagram embed, no long code:
+
+  ```markdown
+  This problem is a direct application of the {pattern} pattern.
+  Checkout the [[{Pattern} general theory]] for more details
+  ```
+
+- Wiki link name must match the general theory filename (e.g. `[[Line Sweep general theory]]`).
+
+## 4. Excalidraw visuals
+
+- Prefer **visual** Excalidraw over long prose; minimal text on canvas
+- Generous spacing; avoid overlapping elements
+- Dotted lines + transparent fills for guide/zone overlays; draw data **on top**
+- Use a clear overlapping example when teaching interval/sweep concepts
+
+## 5. LeetCode code (optional)
+
+- Mirror solutions under `LeetCode/Algorithms/{Pattern}/` with problem link in docstring (existing repo convention).
+
+## Reference implementations
+
+- `Notes/BinarySearch/Binary Search general theory.md` + `Ex-Binary_Search.md` + `153. …`
+- `Notes/LineSweep/Line Sweep general theory.md` + `Ex-Line_Sweep.md` + `1854. …`
+- `Notes/LineSweep/Ex-1674_Complementary.md` + `1674. …` (problem-specific Ex embed + thought process in problem note)

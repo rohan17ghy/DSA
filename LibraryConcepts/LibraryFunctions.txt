@@ -30,6 +30,10 @@ KeyError: 'Map'
 >>>a.discard('Set')
 >>>a
 set()
+
+#Enumerating set
+>>> for index, value in enumerate(my_set):
+		print(f"Index: {index}, Value: {value}")
 ------------------------------------------------
 Tuple --> ordered, unchangeable, indexed, allow duplicates
 
@@ -494,6 +498,15 @@ Counter({'R': 1, 'o': 1, 'h': 1, 'a': 1, 'n': 1})
 Counter({'R': 2, 'o': 1, 'h': 1, 'a': 1, 'n': 1})
 >>>ctr2 > ctr1
 True
+>>>collections.Counter([1, 1, 2, 3, 4, 3])
+Counter({1: 2, 3: 2, 2: 1, 4: 1})
+
+>>>counter[5] = 2
+Counter({1: 2, 3: 2, 2: 1, 4: 1, 5: 2})
+
+>>> del c[1]
+Counter({3: 2, 2: 1, 4: 1, 5: 2})
+
 --------------------------------------------------------------------------------
 defaultdict
 
