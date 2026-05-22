@@ -53,3 +53,28 @@ $$= N! \left(\frac{1}{(N-1)!} + \frac{1}{(N-2)!} + \cdots + \frac{1}{0!}\right)$
 $$= N! \sum_{k=0}^{N-1} \frac{1}{k!} \approx e \cdot N!$$
 
 The last step uses the fact that the Taylor series for $e$ is $\displaystyle\sum_{k=0}^{\infty} \frac{1}{k!}$, so the partial sum converges to $e$ as N grows large.
+
+---
+
+## 5. Number of Digits in a Positive Integer
+
+**Formula:** $\text{digits}(n) = \lfloor \log_{10} n \rfloor + 1$  for $n \geq 1$
+
+**In code (Python):**
+
+```python
+digits = math.floor(math.log10(num)) + 1   # num >= 1
+```
+
+**Examples:**
+
+| $n$ | $\lfloor \log_{10} n \rfloor$ | digits |
+|-----|-------------------------------|--------|
+| 1 | 0 | 1 |
+| 9 | 0 | 1 |
+| 10 | 1 | 2 |
+| 123 | 2 | 3 |
+| $10^9$ | 9 | 10 |
+
+
+>[!note] For $n = 0$, $\log_{10}(0)$ is undefined; treat separately (usually **1** digit: `"0"`).
