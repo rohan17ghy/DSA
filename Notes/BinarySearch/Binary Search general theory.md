@@ -5,7 +5,7 @@
 
 # Complete Code
 
-```python title:findMin.py
+```python fold title:findMin.py
 class Solution:
 
     def findMin(self, nums: List[int]) -> int:
