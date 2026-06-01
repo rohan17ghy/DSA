@@ -1,7 +1,7 @@
 #lps #longestPrefixSuffix #kmp #stringSearch #substring #substringMatch #intuition  #twoPointers 
 
 
-![[KMP Substring Match 2026-05-04 15.39.32.excalidraw| 1000]]
+![[ExcalidrawEmbeds/Strings/KMP Substring Match 2026-05-04 15.39.32.excalidraw | 1000]]
 
 
 Reference: 

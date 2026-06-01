@@ -1,6 +1,6 @@
 #greedy #binarySearch #dp #array #hard #intuition 
 
-![[Ex - 3660 Jump Game IX | 1000]]
+![[ExcalidrawEmbeds/Greedy/Ex - 3660 Jump Game IX | 1000]]
 
 
 # Code

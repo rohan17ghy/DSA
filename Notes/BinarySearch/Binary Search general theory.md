@@ -1,6 +1,6 @@
 #binarySearch #tle #template #pattern 
 
-![[Ex-Binary_Search | 1000]]
+![[ExcalidrawEmbeds/BinarySearch/Ex-Binary_Search | 1000]]
 
 
 # Complete Code

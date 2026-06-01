@@ -1,6 +1,6 @@
 #lineSweep #template #pattern 
 
-![[Ex-Line_Sweep_general_theory| 1000]]
+![[ExcalidrawEmbeds/LineSweep/Ex-Line_Sweep_general_theory | 1000]]
 
 
 # Complete Code

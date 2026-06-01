@@ -1,4 +1,4 @@
-"""Export .excalidraw JSON to Obsidian Ex-1674_Complementary.md (full plugin format)."""
+"""Export .excalidraw JSON to Obsidian Ex-1674_Minimum_Moves_to_Make_Array_Complementary.md."""
 import json
 import re
 from pathlib import Path
@@ -10,7 +10,7 @@ except ImportError:
 
 ROOT = Path(r"c:\Code\DSA\Notes")
 SRC = ROOT / "Excalidraw" / "Line-Sweep-1674-Complementary.excalidraw"
-DST = ROOT / "LineSweep" / "Ex-1674_Complementary.md"
+DST = ROOT / "ExcalidrawEmbeds" / "LineSweep" / "Ex-1674_Minimum_Moves_to_Make_Array_Complementary.md"
 
 WARNING = (
     "==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== "

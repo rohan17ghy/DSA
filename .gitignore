@@ -11,6 +11,8 @@ Thumbs.db
 # --- Logs / temp ---
 *.log
 *.tmp
+__pycache__/
+*.pyc
 
 # --- Node (if using plugins/dev tools) ---
 node_modules/

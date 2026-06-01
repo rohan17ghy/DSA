@@ -14,10 +14,12 @@ When creating or extending algorithm/pattern notes in this repo, mirror the **Bi
 Notes/
   {Pattern}/                          # e.g. BinarySearch, LineSweep
     {Pattern} general theory.md         # hub: diagram + template code
-    Ex-{Pattern_Snake}.md               # Obsidian Excalidraw (compressed-json)
-    {leetcode#}. {Problem Title}.md     # thin problem note → links to general theory
+    {#}. {Problem Title}.md             # thin problem note → links to general theory
   Excalidraw/
-    {Pattern-Name}.excalidraw           # drawing source (optional; sync with Ex-*.md)
+    {Pattern-Name}.excalidraw           # raw drawing JSON + generator scripts
+  ExcalidrawEmbeds/
+    {Pattern}/                          # topic subfolder (matches Notes/{Pattern})
+      Ex-{Pattern_Snake}.md             # Obsidian Excalidraw embed (.md, compressed-json)
 ```
 
 ## 1. `{Pattern} general theory.md` (hub)
@@ -25,7 +27,7 @@ Notes/
 - YAML-style tags on line 1: `#patternTag #tle #template` (match existing tags in sibling notes)
 - Embed the Excalidraw companion (width 1000):
 
-  `![[Ex-{Pattern_Snake} | 1000]]`
+  `![[ExcalidrawEmbeds/{Pattern}/Ex-{Pattern_Snake} | 1000]]`
 
 - Section `# Complete Code` with a single template solution:
 
@@ -33,7 +35,7 @@ Notes/
 
 - **Do not** embed `Excalidraw/*.excalidraw` directly here — use `Ex-*.md` only.
 
-## 2. `Ex-{Pattern_Snake}.md` (Obsidian Excalidraw)
+## 2. `ExcalidrawEmbeds/{Pattern}/Ex-{Pattern_Snake}.md` (Obsidian Excalidraw)
 
 - Frontmatter:
 
@@ -48,7 +50,7 @@ Notes/
 - `# Excalidraw Data` → `## Text Elements` (one line per label + ` ^elementId`)
 - `%%` → `## Drawing` → ` ```compressed-json ` (LZString base64 of `.excalidraw` JSON) → closing ` ``` ` → `%%`
 
-Regenerate from `Excalidraw/*.excalidraw` when the drawing is edited outside Obsidian.
+Regenerate from `Excalidraw/*.excalidraw` into `ExcalidrawEmbeds/{Pattern}/` when the drawing is edited outside Obsidian.
 
 ## 3. `{#}. {Problem Title}.md` (per problem)
 
@@ -75,6 +77,7 @@ Regenerate from `Excalidraw/*.excalidraw` when the drawing is edited outside Obs
 
 ## Reference implementations
 
-- `Notes/BinarySearch/Binary Search general theory.md` + `Ex-Binary_Search.md` + `153. …`
-- `Notes/LineSweep/Line Sweep general theory.md` + `Ex-Line_Sweep.md` + `1854. …`
-- `Notes/LineSweep/Ex-1674_Complementary.md` + `1674. …` (problem-specific Ex embed + thought process in problem note)
+- `Notes/BinarySearch/Binary Search general theory.md` → `ExcalidrawEmbeds/BinarySearch/Ex-Binary_Search.md` + `153. …`
+- `Notes/LineSweep/Line Sweep general theory.md` → `ExcalidrawEmbeds/LineSweep/Ex-Line_Sweep_general_theory.md` + `1854. …`
+- `Notes/LineSweep/1674. …` → `ExcalidrawEmbeds/LineSweep/Ex-1674_Minimum_Moves_to_Make_Array_Complementary.md`
+- `Notes/DynamicProgramming/Dynamic Programming general theory.md` → `ExcalidrawEmbeds/DynamicProgramming/Ex-DP_*.md`
